@@ -1,0 +1,27 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black; 
+}
+
+input {
+    width: 98%;
+}
+
+textarea {
+    width: 98%;
+}
+
+
+input[type='checkbox'],  input[type='radio']{
+    width: 5%;
+}
+
+input[type='submit']{
+    margin-top: 5px;
+    margin-left: 10rem;
+    width: 5%;
+}

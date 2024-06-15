@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task7.css">
+    <title>Task 7</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <div class="label-box">
+                    <label for="name">Name: </label>
+                </div>
+                <input type="text" name="name" id="name" placeholder="your name"/>
+            </div>
+            <div>
+                <div class="label-box">
+                    <label for="username">Email: </label>
+                </div>
+                <input type="text" name="username" id="username" placeholder="your email"/>
+            </div>
+            <div>
+                <div class="label-box">
+                    <label for="password">Password: </label>
+                </div>
+                <input type="password" name="password" id="password"/>
+            </div>
+            <div>
+                <div class="label-box">
+                    <label for="phone">Phone Number: </label>
+                </div>
+                <input type="number" name="phone" id="phone"/>
+            </div>
+            <div>
+                <div class="label-box">
+                    <label for="gender">Gender:</label>
+                </div>
+                <div class="gender-options">
+                    <label for="male">Male: </label>
+                    <input type="radio" id="male" name="gender" value="Male" checked />
+                    <label for="female">Female: </label>
+                    <input type="radio" id="female" name="gender" value="Male" checked />
+                    <label for="other">Other: </label>
+                    <input type="radio" id="other" name="gender" value="Male" checked />
+                </div>
+            </div>
+            <div>
+                <div class="label-box">
+                    <label for="languages">Language: </label>
+                </div>
+                <select name="language" id="languages">
+                    <option value="" selected language>Select language</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="spanish">Spanish</option>
+                </select>
+            </div>
+            <div>
+                <div class="label-box">
+                    <label for="zip-code">Zip Code: </label>
+                </div>
+                <input type="number" name="zip-code" id="zip-code"/>
+            </div>
+            <div>
+                <div class="label-box">
+                    <label for="about">About: </label>
+                </div>
+                <textarea id="about" name="about" placeholder="Write about yourself..."></textarea>
+            </div>
+            <div class="register">
+                <input type="submit" value="Register" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

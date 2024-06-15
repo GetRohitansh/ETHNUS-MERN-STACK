@@ -1,0 +1,52 @@
+div {
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.label-box {
+    width: 150px;
+    color: azure;
+}
+
+.label-box input {
+    margin-left: 30px;
+    height: 0.8rem;
+}
+
+select{
+    height: 1.3rem;
+}
+
+.gender-options {
+    display: flex;
+    color: azure;
+}
+
+#about {
+    width: 200px;
+    height: 75px;
+}
+
+.register input{
+    width: 80%;
+    margin-left: 10%;
+    height: 1.5rem;
+    border-radius: 2px;
+    border: 0;
+
+}
+
+form {
+    background-color: rgb(128, 0, 55);
+    padding: 5% 5% 5% 5%;
+    margin: 5% 0 5% 0;
+    width: 75%;
+}
+
+.container {
+    background-color: rgb(199, 3, 88);
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-left: 12.5%;
+}

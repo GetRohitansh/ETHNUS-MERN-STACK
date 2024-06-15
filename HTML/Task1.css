@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+    background-color: rgb(146, 212, 206);
+}
+
+th,td {
+  border: 1px solid white;
+}
+
+td{
+    text-align: left;
+}
+
+th {
+    padding: 0 4rem 0 4rem;
+    text-align: center;
+}

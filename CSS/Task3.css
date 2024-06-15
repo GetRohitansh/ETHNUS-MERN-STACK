@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td, th {
+    padding: 1rem 14rem 1rem 3rem;
+}
+
+.info-row {
+    background-color: rgb(17, 169, 50);
+    color: #edeaea;
+    text-align: left;
+}
+
+.row-type-1{
+    background-color: rgb(226, 223, 223);
+}

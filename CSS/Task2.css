@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+}
+
+.vertical-navbar{
+    background-color: rgba(95, 224, 224, 0.888);
+    width: 15%;
+    height: 97vh;
+    border: 1px solid black;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+
+    font-size: larger;
+    color: rgb(66, 66, 222);
+    
+    font-weight: 500;
+    padding-left: 0;
+}
+
+.vertical .pages {
+    padding: 0.5rem;
+}
+
+.vertical .pages:hover {
+    background-color: orange;
+    color: beige;
+}
+
+
+
+.horizontal-navbar{
+    background-color: rgb(206, 203, 203);
+    display: flex;
+    margin-left: 2%;
+    width: 85%;
+    height: 20%;
+    border: 1px solid black;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: larger;
+    color: rgb(66, 66, 222);
+    
+    font-weight: 500;
+}
+
+.horizontal .pages {
+    padding: 0.99rem;
+    border-left: 1px solid black;
+}
+
+.horizontal .pages:hover {
+    background-color: grey;
+    color: white;
+}
+
+

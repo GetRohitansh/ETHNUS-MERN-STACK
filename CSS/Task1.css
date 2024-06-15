@@ -1,0 +1,52 @@
+table {
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgb(146, 212, 206);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+td {
+  text-align: left;
+}
+
+th {
+  padding: 0 4rem 0 4rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  margin-left: 32%;
+  margin-right: 32%;
+  grid-template-columns: repeat(3, 7em [col-start]);
+  grid-template-rows: repeat(3, 5em [row-start]);
+  gap: 20px;
+}
+
+.box {
+  border: 2.5px solid rgb(152, 239, 22);
+}
+
+.box-1 {
+  border-radius: 0.3em;
+}
+
+.box-2 {
+  border-radius: 0.7em;
+}
+
+.box-4 {
+  border-radius: 50%;
+}
+
+.box-5 {
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+}
