@@ -1,0 +1,129 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styles to the body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 3.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Table styles */
+.project-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse; /* Collapse borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.project-table th,
+.project-table td {
+    border: 1px solid #ddd; /* Add borders */
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.project-table th {
+    background: linear-gradient(to right, #4e73df, #945dd6); /* Gradient background */
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-table td {
+    background-color: #f8f9fa; /* Lighter background color */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.project-table td:hover {
+    transform: translateY(-5px);
+    background-color: #e9ecef; /* Slightly darker background on hover */
+}
+
+/* Button styles */
+.link-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
+
+/* Social icon styles */
+.social-icons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
