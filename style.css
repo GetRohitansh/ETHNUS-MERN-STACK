@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.task-name {
+    width: 18rem;
+}
+
 /* Apply basic styles to the body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,7 +23,7 @@ body {
 /* Container styles */
 .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     padding: 40px;
     background-color: #fff;
     border-radius: 20px;
