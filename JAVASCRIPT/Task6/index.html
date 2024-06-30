@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-container img {
+            width: 175px;
+            margin-bottom: 20px;
+        }
+
+        .form-container .input-group {
+            margin-bottom: 20px;
+        }
+
+        .form-container .input-group-prepend span {
+            width: 40px;
+            text-align: center;
+        }
+
+        .form-container .input-field {
+            border-radius: 3px;
+        }
+
+        .form-container .btn-login {
+            background-color: #0095f6;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .form-container .btn-login:hover {
+            background-color: #0084d1;
+        }
+
+        .form-container .checkbox-container {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .form-container .checkbox-container .form-check {
+            margin-bottom: 0;
+        }
+
+        .form-container .forgot-password {
+            text-align: right;
+        }
+
+        .signup-link {
+            margin-top: 8px;
+            font-size: 14px;
+            margin-left: 5rem;
+        }
+
+        .form-container .signup-link a {
+            color: #0095f6;
+        }
+
+        .form-container .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        .company-name {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .company-name h1 {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            margin-left: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <span class="company-name">
+                <h1><i>Instagram</i></h1>
+            </span>
+            <form id="login-form my-4">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                        </span>
+                    </div>
+                    <input type="text" id="username" class="form-control input-field" placeholder="Username or Email"
+                        required>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
+                            </svg>
+                        </span>
+                    </div>
+                    <input type="password" id="password" class="form-control input-field" placeholder="Password"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-login btn-block">Log In</button>
+                <div class="form-check checkbox-container my-4">
+                    <input class="form-check-input" type="checkbox" id="remember-me">
+                    <label class="form-check-label" for="remember-me">
+                        Remember Me
+                    </label>
+                    <span class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </span>
+                </div>
+
+            </form>
+        </div>
+        <div class="signup-link">
+            Don't have an account? <a href="#">Sign up here</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-QwoqAxL1fsF3z6rlwVbclb7F4e/5F+C1C1vh6jI5oKw73R9zDPJdjAtzYqtxj1/H"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+DylaxQZe8+0psszE92nWWqL0s0kO5f2lXk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

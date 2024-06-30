@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort String Alphabetically</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    <script>
+        function sortStringAlphabetically(inputString) {
+            let charArray = inputString.split('');
+            charArray.sort();
+            let sortedString = charArray.join('');
+            return sortedString;
+        }
+
+        function displaySortedString() {
+            let inputString = document.getElementById('inputString').value;
+            let sorted = sortStringAlphabetically(inputString);
+            document.getElementById('result').innerHTML = "Sorted String: " + sorted;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sort String Alphabetically</h1>
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString">
+        <button onclick="displaySortedString()">Sort</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
